@@ -1,0 +1,165 @@
+/******** general stylings *******/
+*,
+*:before,
+*:after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-white-01: hsl(0, 0%, 100%);
+    --clr-white-02: hsl(65, 43%, 95%);
+    --clr-red-01: hsl(8, 80%, 56%);
+    --clr-blue-01: hsl(207, 54%, 51%);
+    --clr-green-01: hsl(168, 47%, 50%);
+    --clr-grey-5: hsl(202, 6%, 37%);
+}
+
+
+html {
+    font-family: 'Limelight', cursive;
+    font-size: 16px;
+    background-color: var(--clr-white-02);
+}  
+
+/******** specific stylings *******/
+
+.clock {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+
+    z-index: 1;
+
+    position: relative;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: calc(50% - .5rem);
+    left: 50%;
+    z-index: 2;
+}
+
+.hours {
+    height: .5rem;
+    width: 15rem;
+    border-radius: .2rem;
+
+    transform-origin: 0 100%;
+    transform: rotate();
+
+    position: absolute;
+    top: calc(50% - .25rem);
+    left: 50%;
+    z-index: 2;
+}
+
+.min {
+    height: .3rem;
+    width: 15rem;
+    border-radius: .2rem; 
+    
+    transform-origin: 0 100%;
+    transform: rotate();
+
+    position: absolute;
+    top: calc(50% - .15rem);
+    left: 50%;
+    z-index: 2;
+}
+
+.sec {
+    height: .1rem;
+    width: 15rem;
+    border-radius: .2rem;  
+
+    transform-origin: 0 100%;
+    transform: rotate();
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+/******** utilities *******/
+/**font**/
+
+.fnts-3rem {
+    font-size: 3rem;
+}
+
+
+/**sizes**/
+.pdg-blc-3rem {
+    padding-block: 3rem;
+}
+
+.mrg-btm-3rem {
+    margin-bottom: 3rem;
+}
+
+
+/**colors**/
+.clr-white-01 {
+    color: var(--clr-white-01);
+}
+
+.clr-red-01 {
+    color: var(--clr-red-01);
+}
+
+.clr-blue-01 {
+    color: var(--clr-blue-01);
+}
+
+.clr-green-01 {
+    color: var(--clr-green-01);
+}
+
+
+/**bg-colors**/
+.bg-clr-white-01 {
+    background-color: var(--clr-white-01);
+}
+
+.bg-clr-red-01 {
+    background-color: var(--clr-red-01);
+}
+
+.bg-clr-blue-01 {
+    background-color: var(--clr-blue-01);
+}
+
+.bg-clr-green-01 {
+    background-color: var(--clr-green-01);
+}
+
+
+/**shadows**/
+.bx-sdw-0-8-24 {
+    box-shadow: var(--clr-grey-5) 0px 24px 24px;
+}
+
+
+/**borders**/
+.bdr-1rem-blue {
+    border: 1rem solid var(--clr-blue-01);
+}
+
+
+/**felx**/
+.flex-c-c-c {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
+
+/**attributes**/
